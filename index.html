@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>MI FRESITA!!.</strong>
+                        <p>
+                            Feliz amor y amistad amor mio, san valentin o cmo sea, el primero de muchos que pasaremos juntos mi Roma, no tendria q esperar
+                            solo a hoy para demostrar mi amor, contigo todos los dias son dia de amor, ser tu amistad y compañero ideal es el mejor de los regalos.
+                            dias en los q me siento completo, dias en los que te 
+                            acompaño, en los que soy tu hombro, tu mano derecha,tu mjr amigo, tu pilar, tu novio e incluso más. mira el siguiente enlace :> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
